@@ -1,0 +1,28 @@
+# Normalize line endings; keep Unity YAML as LF so diffs stay clean cross-platform.
+* text=auto eol=lf
+
+# Unity YAML assets — mergeable with UnityYAMLMerge, never CRLF-mangled.
+*.unity        text eol=lf merge=unityyamlmerge diff
+*.prefab       text eol=lf merge=unityyamlmerge diff
+*.asset        text eol=lf merge=unityyamlmerge diff
+*.mat          text eol=lf merge=unityyamlmerge diff
+*.anim         text eol=lf merge=unityyamlmerge diff
+*.controller   text eol=lf merge=unityyamlmerge diff
+*.physicMaterial2D text eol=lf merge=unityyamlmerge diff
+*.meta         text eol=lf
+*.cs           text eol=lf diff=csharp
+
+# Binary assets
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.psd    binary
+*.ico    binary
+*.mp3    binary
+*.wav    binary
+*.ogg    binary
+*.ttf    binary
+*.otf    binary
+*.fbx    binary
+*.unitypackage binary
